@@ -14,7 +14,11 @@ export default defineConfig(({ command }) => {
     build: {
       sourcemap: true,
       rollupOptions: {
-        input: glob.sync('./src/*.html'),
+        input: {
+          main: resolve(__dirname, 'src/index.html'),
+          gallery: resolve(__dirname, 'src/1-gallery.html'),
+          form: resolve(__dirname, 'src/2-form.html'),
+      },
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
