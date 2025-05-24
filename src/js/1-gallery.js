@@ -49,11 +49,10 @@ const images = [
   },
 ];
 
-// Находим контейнер галереи
 const galleryList = document.querySelector('.gallery');
 
 if (galleryList) {
-  // Генерируем разметку
+
   const markup = images
     .map(
       ({ preview, original, description }) => `
@@ -66,10 +65,8 @@ if (galleryList) {
     )
     .join('');
 
-  // Вставляем разметку в DOM
   galleryList.innerHTML = markup;
 
-  // Инициализируем SimpleLightbox
   new SimpleLightbox('.gallery a', {
     captionsData: 'alt',
     captionDelay: 250,
