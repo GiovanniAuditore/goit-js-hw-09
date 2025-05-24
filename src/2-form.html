@@ -2,22 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Feedback Form</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <form class="feedback-form" autocomplete="off">
-      <label>
-        Email
-        <input type="email" name="email" autofocus />
-      </label>
-      <label>
-        Message
-        <textarea name="message" rows="8"></textarea>
-      </label>
-      <button type="submit">Submit</button>
-    </form>
-
-    <script type="module" src="./js/2-form.js"></script>
+    <div class="form-wrapper">
+      <form class="feedback-form" autocomplete="off">
+        <label>
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script type="module" src="../js/2-form.js"></script>
   </body>
 </html>
